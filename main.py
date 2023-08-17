@@ -7,9 +7,9 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 1
-SHORT_BREAK_MIN = .5
-LONG_BREAK_MIN = .75
+WORK_MIN = 25
+SHORT_BREAK_MIN = 5
+LONG_BREAK_MIN = 20
 reps = 0
 timer = None
 
@@ -47,7 +47,6 @@ def start_timer():
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
 
 def count_down(count):
-    label = 0
     count_min = math.floor(count / 60)
     count_sec = count % 60
     if count_sec < 10:
